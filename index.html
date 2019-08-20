@@ -69,6 +69,7 @@
   		$(function () {
   			var holiday = new Date();
   			holiday = new Date("{{site.utc}}");
+			background: transparent;
   			$('#defaultCountdown').countdown({until: holiday});
   			$('#year').text(holiday.getFullYear());
   		});
