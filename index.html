@@ -39,7 +39,7 @@
 	<script type="text/javascript">
 	$(function () {
 		var austDay = new Date();
-		austDay = new Date(2020, 1 - 1, 5);
+		austDay = new Date("{{site.utc}}");
 		$('#defaultCountdown').countdown({until: austDay});
 		$('#year').text(austDay.getFullYear());
 	});
