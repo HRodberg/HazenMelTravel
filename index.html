@@ -36,15 +36,47 @@
 
     <script src="/js/countdown/jquery.countdown.js"></script>
 
-	<script type="text/javascript">
-	$(function () {
-		var austDay = new Date();
-		austDay = new Date(2020, 1 - 1, 5);
-		$('#defaultCountdown').countdown({until: austDay});
-		$('#year').text(austDay.getFullYear());
-	});
+																	<script type="text/javascript">
+																	$(function () {
+																		var austDay = new Date();
+																		austDay = new Date(2020, 1 - 1, 5);
+																		$('#defaultCountdown').countdown({until: austDay});
+																		$('#year').text(austDay.getFullYear());
+																	});
 
-	</script>
+																	</script>
 
   </head>
+
+  <body style="background:#5EA5A4">
+
+    <div class="row-fluid">
+
+      <div class="span11 text-center">
+        <img src="pizza-week.png" />
+        <h1>Jan 5-11, 2020</h1>
+      </div>
+
+    </div> <!-- /row -->
+
+    <div class="row-fluid">
+      <div class="offset3 span5 text-center"><div id="defaultCountdown"></div></div>
+    </div> <!-- /row -->
+		<hr />
+			<div class="video-container">
+			         <iframe src="//www.youtube.com/embed/3JQvPeQbOQE?rel=0&autoplay=1" frameborder="0" width="560" height="315"></iframe>
+			</div>
+<hr />
+<div class="row">
+	<div class="offset2 span9">
+<h1>Here's the deal</h1>
+<p style="color:#eee">Eat pizza every day. Get yr friends together and make it a party.</p>
+</div>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
 </html>
