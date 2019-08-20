@@ -4,8 +4,6 @@
 
 ### Customize the text, the colors, the logo. Host it for free. You can even use your own custom domain.
 
-![](assets/img/beyonce-countdown-01.gif)
-
 # Table of Contents
 
 1. [What is Countdown?](#what-is-countdown)
