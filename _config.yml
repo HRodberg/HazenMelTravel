@@ -8,7 +8,7 @@ description: "Countdown to next trip" #Required. short description of the event.
 # hashtag: "" #(Optional) hashtag for the event, example "#hashtag". must be in quotes.
 colors: #(Optional)
   background: "#008dd5" #color of the background of the page
-  primary: "#3FBFBC" #primary color for the page
-  secondary: "#EE4823" #secondary color for the page
+  primary: "#008dd5" #primary color for the page
+  secondary: "#008dd5" #secondary color for the page
   textcolor: "#FFF" #color of the text, which is overlayed on the primary color
 fontfamily: "'Open Sans', sans-serif" #optional
