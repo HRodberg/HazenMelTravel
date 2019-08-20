@@ -7,7 +7,7 @@ description: "Countdown to next trip" #Required. short description of the event.
 # facebookEventLink: #(Optional) if you have a facebook event, put the link here and we'll add a "RSVP on facebook" link at the bottom.
 # hashtag: "" #(Optional) hashtag for the event, example "#hashtag". must be in quotes.
 colors: #(Optional)
-  background: "#FFF" #color of the background of the page
+  background: "#3FBFBF" #color of the background of the page
   primary: "#3FBFBC" #primary color for the page
   secondary: "#EE4823" #secondary color for the page
   textcolor: "#FFF" #color of the text, which is overlayed on the primary color
