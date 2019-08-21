@@ -1,5 +1,43 @@
 <html>
 <header><title>This is title</title></header>
-<body>
-<div class="fusion-countdown-counter-wrapper" id="fusion-countdown-1" data-gmt-offset="-7" data-timer="2019-08-26-15-00-00" data-omit-weeks="1" style="visibility: visible;"><div class="fusion-dash-wrapper "><div class="fusion-dash fusion-dash-days"><div class="fusion-thousand-digit fusion-digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block; height: auto;">0</div></div><div class="fusion-hundred-digit fusion-digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block; height: auto;">0</div></div><div class="fusion-digit"><div class="top" style="display: none;">0</div><div class="bottom" style="display: block; height: auto;">0</div></div><div class="fusion-digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block; height: auto;">5</div></div><div class="fusion-dash-title">Days</div></div></div><div class="fusion-dash-wrapper "><div class="fusion-dash fusion-dash-hours"><div class="fusion-digit"><div class="top" style="display: none;">2</div><div class="bottom" style="display: block; height: auto;">2</div></div><div class="fusion-digit"><div class="top" style="display: none;">1</div><div class="bottom" style="display: block; height: auto;">1</div></div><div class="fusion-dash-title">Hrs</div></div></div><div class="fusion-dash-wrapper "><div class="fusion-dash fusion-dash-minutes"><div class="fusion-digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block; height: auto;">5</div></div><div class="fusion-digit"><div class="top" style="display: none;">5</div><div class="bottom" style="display: block; height: auto;">5</div></div><div class="fusion-dash-title">Min</div></div></div><div class="fusion-dash-wrapper "><div class="fusion-dash fusion-dash-seconds"><div class="fusion-digit"><div class="top" style="display: none;">2</div><div class="bottom" style="display: block; height: auto;">2</div></div><div class="fusion-digit"><div class="top" style="display: none;">2</div><div class="bottom" style="display: block; height: auto;">2</div></div><div class="fusion-dash-title">Sec</div></div></div></div></body>
+<body translate="no">
+<div class="container">
+<h1 id="head">Countdown to my birthday:</h1>
+<ul>
+<li><span id="days">40</span>days</li>
+<li><span id="hours">5</span>Hours</li>
+<li><span id="minutes">52</span>Minutes</li>
+<li><span id="seconds">5</span>Seconds</li>
+</ul>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script id="rendered-js">
+      const second = 1000,
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
+
+let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
+x = setInterval(function () {
+
+  let now = new Date().getTime(),
+  distance = countDown - now;
+
+  document.getElementById('days').innerText = Math.floor(distance / day),
+  document.getElementById('hours').innerText = Math.floor(distance % day / hour),
+  document.getElementById('minutes').innerText = Math.floor(distance % hour / minute),
+  document.getElementById('seconds').innerText = Math.floor(distance % minute / second);
+
+  //do something later when date is reached
+  //if (distance < 0) {
+  //  clearInterval(x);
+  //  'IT'S MY BIRTHDAY!;
+  //}
+
+}, second);
+      //# sourceURL=pen.js
+    </script>
+
+
+</body>
 </html>
